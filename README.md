@@ -9,7 +9,7 @@
 
 ## Archivos que componen el proyecto
 * El archivo makefile
-* Las clases "Central" "AplicacionMatriz, Matriz, OperacionesMatriz, OperacionesMatrizImpl, PanelMatriz" (todo con el tipo de formato.java) 
+* Las clases "AplicacionMatriz, Matriz, OperacionesMatriz, OperacionesMatrizImpl, PanelMatriz" (todo con el tipo de formato.java) 
 
 ## Requerimientos
 1) Consola o terminal para ejecutar el programa (Ej: Cmd Windows o Terminal Linux)
