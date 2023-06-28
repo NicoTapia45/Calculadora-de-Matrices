@@ -25,14 +25,13 @@
 3) Iniciar la terminal en el stage que desea compilar 
 4) Ejecutar el comando "make"
 
-
 ## Ejecucción 
 * Para ejecutar el programa realizar el comando "make run".
 * Para limpiar la carpeta de los archivos de compilación ejecutar el comando "make clean"
 
 ## Consideraciones
-*Tener instalado javafx en su version 20, puesto que este proyecto no funcionara sin el.
-*Este programa esta hecho solamente para matrices de 3x3, no intente colocar matrices mas grandes.
+* Tener instalado javafx en su version 20, puesto que este proyecto no funcionara sin el.
+* Este programa esta hecho solamente para matrices de 3x3, no intente colocar matrices mas grandes.
 
 ## Documentacion Javadoc
 Para generar la documentacion en IntelliJ IDEA, se debe de abrir el proyecto en este IDE y luego ir a la pestaña de "Tools" y seleccionar la opcion "Generate JavaDoc". Luego de esto se debe de seleccionar la carpeta donde se guardara la documentacion y presionar "Ok". Finalmente se debe de abrir el archivo index.html o cualquier otro con la misma extension, que se encuentren en la carpeta seleccionada para ver la documentacion.
