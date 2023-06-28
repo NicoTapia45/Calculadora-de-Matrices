@@ -1,3 +1,6 @@
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+
 public class OperacionesMatrizImpl implements OperacionesMatriz {
     private Matriz matriz;
 
@@ -49,5 +52,32 @@ public class OperacionesMatrizImpl implements OperacionesMatriz {
         }
         return resultado;
     }
-}
 
+    @Override
+    public Matriz inversa() {
+        Matriz inversa = null;
+        try {
+            double determinante = matriz.determinante();
+            if (determinante == 0) {
+                throw new IllegalArgumentException("La matriz no tiene inversa.");
+            }
+
+            Matriz cofactores = matriz.cofactores();
+            Matriz adjunta = cofactores.transpuesta();
+
+            inversa = new Matriz(matriz.obtenerNumeroFilas(), matriz.obtenerNumeroColumnas());
+            for (int i = 0; i < matriz.obtenerNumeroFilas(); i++) {
+                for (int j = 0; j < matriz.obtenerNumeroColumnas(); j++) {
+                    inversa.establecer(i, j, adjunta.obtener(i, j) / determinante);
+                }
+            }
+        } catch (IllegalArgumentException e) {
+            Alert alert = new Alert(AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
+        return inversa;
+    }
+}
