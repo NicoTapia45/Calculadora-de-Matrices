@@ -1,6 +1,10 @@
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
+/**
+ * Esta clase representa un panel para la entrada de matrices en la interfaz de usuario.
+ * Proporciona una interfaz gráfica para que el usuario introduzca los valores de la matriz y obtenga la matriz resultante.
+ */
 public class PanelMatriz extends GridPane {
     private TextField[][] campos;
 
@@ -25,4 +29,3 @@ public class PanelMatriz extends GridPane {
         return matriz;
     }
 }
-
