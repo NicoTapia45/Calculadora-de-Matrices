@@ -5,6 +5,11 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
+/**
+ * Esta es la clase principal de la aplicación que maneja la interfaz gráfica de usuario.
+ * Se crean dos paneles de matriz para las operaciones y se manejan los eventos de los botones.
+ */
+
 public class AplicacionMatriz extends Application {
     private PanelMatriz panelMatrizA;
     private PanelMatriz panelMatrizB;
