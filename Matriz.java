@@ -1,3 +1,8 @@
+/**
+ * Esta clase representa una matriz numérica y proporciona operaciones básicas.
+ * Contiene métodos para obtener y establecer valores de celdas, así como operaciones de cálculo más complejas.
+ */
+
 public class Matriz {
     private final double[][] elementos;
 
