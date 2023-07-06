@@ -1,6 +1,10 @@
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
+/**
+ * Esta es la implementación de la interfaz OperacionesMatriz.
+ * Implementa los métodos de suma, resta, multiplicación e inversa de matrices.
+ */
 public class OperacionesMatrizImpl implements OperacionesMatriz {
     private Matriz matriz;
 
